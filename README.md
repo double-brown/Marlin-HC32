@@ -1,9 +1,13 @@
 # Marlin for the Voxlab Aquila X2/C2 (HC32)
 
-This project aims to port vanilla Marlin to the [Voxlab Aquila X2](https://www.voxelab3dp.com/product/aquila-x2-fdm-3d-printer) 3D-Printer with H32 (HC32F46x) SoC.
-Special thanks to **[shadow578](https://github.com/shadow578/Marlin-H32)** for his work on creating this repository.
+This project aims to port vanilla Marlin to the Voxlab Aquila 3D-Printer with HC32 (HC32F46x) SoC.
 
-this project is based on the following projects and wouldn't have been possible without them: 
+### Special thanks to **[shadow578](https://github.com/shadow578/Marlin-H32)** for his work on creating this repository.
+
+this project is based on the following projects and wouldn't have been possible without them:
+- [shadow578/Marlin-H32](https://github.com/shadow578/Marlin-H32)
+- [mriscoc/Ender3V2S1](https://github.com/mriscoc/Ender3V2S1) (base `ProUI`)
+- [classicrocker883/MriscocProUI](https://github.com/classicrocker883/MriscocProUI) (optimizations to `ProUI` and maintaining this repo)
 - [MarlinFirmware/Marlin](https://github.com/MarlinFirmware/Marlin) 
 - [Voxelab-64/Aquila_X2](https://github.com/Voxelab-64/Aquila_X2) (base `h32_core` and HAL)
 - [alexqzd/Marlin-H32](https://github.com/alexqzd/Marlin-H32) (optimizations to `h32_core` and `HAL`)
