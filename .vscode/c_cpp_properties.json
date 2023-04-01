@@ -1,0 +1,53 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x86",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/andrew/PIO-Marlin-H32/Marlin",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/cores/arduino",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/variants/mega",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+        "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+        ""
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "path": [
+          "/home/andrew/PIO-Marlin-H32/Marlin",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/cores/arduino",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/variants/mega",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+          "/home/andrew/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+          ""
+        ]
+      },
+      "defines": [
+        "PLATFORMIO=60106",
+        "ARDUINO_AVR_MEGA2560",
+        "__MARLIN_FIRMWARE__",
+        "NDEBUG",
+        "F_CPU=16000000L",
+        "ARDUINO_ARCH_AVR",
+        "ARDUINO=10808",
+        "__AVR_ATmega2560__",
+        ""
+      ],
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "compilerPath": "/home/andrew/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+      "compilerArgs": [
+        "-mmcu=atmega2560",
+        ""
+      ],
+      "intelliSenseMode": "linux-gcc-x86"
+    }
+  ],
+  "version": 4
+}
