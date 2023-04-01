@@ -148,95 +148,63 @@ if you brick your printer, you're on your own.
 
 
 ---
-<!-- begin original README -->
+# Professional Firmware for the Voxelab Aquila and Creality Ender 3 Printers
+
+![GitHub contributors](https://img.shields.io/github/contributors/classicrocker883/MriscocProUI.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/classicrocker883/MriscocProUI.svg)
+[![Build Status](https://github.com/classicrocker883/MriscocProUI/workflows/CI/badge.svg?branch=MriscocProUI)](https://github.com/classicrocker883/MriscocProUI/actions)
+
+## Universal RET6/RCT6 chips: G32, N32, (working on H32), Creality 4.2.7 and 4.2.2 boards
+
+### - Please read this: -
+When you first turn on the printer and on the Main Menu, go to `Level / Mesh Settings / Mesh Inset`. You will see `Mesh X Maximum`,
+set this to the value that is `Mesh Y Maximum` (or another value as to not hit the bed clips).
+
+This next part may be optional, but its recommended to do anyway...
+Go back to the `Level` menu, look for `Load Bed Mesh` and select it. A status message should then confirm it's loaded. 
+(Before that, select which Mesh to load from the `Memory Slot`).
+
+***Mesh Inset doesnt actually save after restart, so it must be done after the printer is turned on every time (until the issue is fixed)*.***
+
+So when you start printing and it says Advance Pause with Runout enabled, you may have to change the pull-up to HIGH, or LOW (depending on what is already selected). This is found in the Prepare menu/ Filament Management/ Filament Settings. 
+If you encounter any issues please feel free to post it on the issues tab, or if anything is going well please leavd a comment. 
 
 
+I will be working on more upgrades and features and tweaks along the way. Enjoy using this fork of Marlin as I intend it to be the best. It is easy to use and convenient. So far I really enjoy the new settings and toolbar for the main menu. There is a variety of parameters and options that can be changed without having to reflash the firmware. 
 
+[Linear Advance Information](https://github.com/MarlinFirmware/MarlinDocumentation/blob/master/_features/lin_advance.md)
 
-<p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
+The Precompiled binary files of this firmware can work with STM32 (STM32F103RET6/RCT6) and it's clones G32 (GD32F103RET6), N32 (Nation), and possibly H32. They can be downloaded from:
+[Latest Release](https://github.com/classicrocker883/MriscocProUI/releases/latest)
 
-<h1 align="center">Marlin 3D Printer Firmware</h1>
+<img height=260 src="https://enfss.voxelab3dp.com/10001/picture/2021/09/b849845bd0ffa889f00a782aae76ccf3.jpg" align="left" />
+<img height=260 src="https://enfss.voxelab3dp.com/10001/picture/2021/09/677b721574efca3daa5c0d39e438fee6.jpg" align="middle" /> 
+<img height=260 src="buildroot/share/pixmaps/Ender-3V2.jpg" align="left" />
+<img height=300 src="buildroot/share/pixmaps/Ender-3S1.jpg" align="middle"  />
+<BR/>
 
-<p align="center">
-    <a href="/LICENSE"><img alt="GPL-V3.0 License" src="https://img.shields.io/github/license/marlinfirmware/marlin.svg"></a>
-    <a href="https://github.com/MarlinFirmware/Marlin/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/marlinfirmware/marlin.svg"></a>
-    <a href="https://github.com/MarlinFirmware/Marlin/releases"><img alt="Last Release Date" src="https://img.shields.io/github/release-date/MarlinFirmware/Marlin"></a>
-    <a href="https://github.com/MarlinFirmware/Marlin/actions"><img alt="CI Status" src="https://github.com/MarlinFirmware/Marlin/actions/workflows/test-builds.yml/badge.svg"></a>
-    <a href="https://github.com/sponsors/thinkyhead"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/thinkyhead?color=db61a2"></a>
-    <br />
-    <a href="https://fosstodon.org/@marlinfirmware"><img alt="Follow MarlinFirmware on Mastodon" src="https://img.shields.io/mastodon/follow/109450200866020466?domain=https%3A%2F%2Ffosstodon.org&logoColor=%2300B&style=social"></a>
-</p>
+## Donations
+Please consider making a donation, as large or as small and as often as you'd like.
+Thank you for your support, I receive donations through [Paypal](https://www.paypal.com/paypalme/andrewleduc)   
 
-Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
-Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
+[<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">](https://www.paypal.com/donate/?business=PFNSKQX9WQQ8W&no_recurring=0&currency_code=USD)   
 
-## Marlin 2.1 Bugfix Branch
+## Wiki
+ - [How to install the firmware](https://github.com/mriscoc/Ender3V2S1/wiki/How-to-install-the-firmware)
+ - [Installing a 3D/BLTouch](https://github.com/mriscoc/Ender3V2S1/wiki/3D-BLTouch)
+ - [Color themes](https://github.com/mriscoc/Ender3V2S1/wiki/Color-Themes)
+ - [How to use with Octoprint](https://github.com/mriscoc/Ender3V2S1/wiki/Octoprint)
+  
+## Community links
+* [Voxelab Aquila Facebook Group](https://www.facebook.com/groups/voxelabaquila/?ref=share&mibextid=NSMWBT) 
+* [Telegram](https://t.me/ender3v2s1firmware)
+* [r/VoxelabAquila on Reddit](https://www.reddit.com/r/VoxelabAquila)
+* [r/ender3V2 on Reddit](https://www.reddit.com/r/ender3v2) 
+* [r/Ender3v2Firmware on Reddit](https://www.reddit.com/r/Ender3v2Firmware) 
+* [E3V2 Facebook](https://www.facebook.com/groups/ender3v2firmware)
+* [E3S1 Facebook](https://www.facebook.com/groups/ender3s1printer)
 
-__Not for production use. Use with caution!__
-
-Marlin 2.1 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
-
-This branch is for patches to the latest 2.1.x release version. Periodically this branch will form the basis for the next minor 2.1.x release.
-
-Download earlier versions of Marlin on the [Releases page](https://github.com/MarlinFirmware/Marlin/releases).
-
-## Example Configurations
-
-Before you can build Marlin for your machine you'll need a configuration for your specific hardware. Upon request, your vendor will be happy to provide you with the complete source code and configurations for your machine, but you'll need to get updated configuration files if you want to install a newer version of Marlin. Fortunately, Marlin users have contributed dozens of tested configurations to get you started. Visit the [MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations) repository to find the right configuration for your hardware.
-
-## Building Marlin 2.1
-
-To build and upload Marlin you will use one of these tools:
-
-- The free [Visual Studio Code](https://code.visualstudio.com/download) using the [Auto Build Marlin](https://marlinfw.org/docs/basics/auto_build_marlin.html) extension.
-- The free [Arduino IDE](https://www.arduino.cc/en/main/software) : See [Building Marlin with Arduino](https://marlinfw.org/docs/basics/install_arduino.html)
-
-Marlin is optimized to build with the **PlatformIO IDE** extension for **Visual Studio Code**. You can still build Marlin with **Arduino IDE**, and we hope to improve the Arduino build experience, but at this time PlatformIO is the better choice.
-
-## Hardware Abstraction Layer (HAL)
-
-Marlin includes an abstraction layer to provide a common API for all the platforms it targets. This allows Marlin code to address the details of motion and user interface tasks at the lowest and highest levels with no system overhead, tying all events directly to the hardware clock.
-
-Every new HAL opens up a world of hardware. At this time we need HALs for RP2040 and the Duet3D family of boards. A HAL that wraps an RTOS is an interesting concept that could be explored. Did you know that Marlin includes a Simulator that can run on Windows, macOS, and Linux? Join the Discord to help move these sub-projects forward!
-
-## 8-Bit AVR Boards
-
-A core tenet of this project is to keep supporting 8-bit AVR boards while also maintaining a single codebase that applies equally to all machines. We want casual hobbyists to benefit from the community's innovations as much as possible just as much as those with fancier machines. Plus, those old AVR-based machines are often the best for your testing and feedback!
-
-### Supported Platforms
-
-  Platform|MCU|Example Boards
-  --------|---|-------
-  [Arduino AVR](https://www.arduino.cc/)|ATmega|RAMPS, Melzi, RAMBo
-  [Teensy++ 2.0](https://www.microchip.com/en-us/product/AT90USB1286)|AT90USB1286|Printrboard
-  [Arduino Due](https://www.arduino.cc/en/Guide/ArduinoDue)|SAM3X8E|RAMPS-FD, RADDS, RAMPS4DUE
-  [ESP32](https://github.com/espressif/arduino-esp32)|ESP32|FYSETC E4, E4d@BOX, MRR
-  [LPC1768](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc1700-cortex-m3/512-kb-flash-64-kb-sram-ethernet-usb-lqfp100-package:LPC1768FBD100)|ARM® Cortex-M3|MKS SBASE, Re-ARM, Selena Compact
-  [LPC1769](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc1700-cortex-m3/512-kb-flash-64-kb-sram-ethernet-usb-lqfp100-package:LPC1769FBD100)|ARM® Cortex-M3|Smoothieboard, Azteeg X5 mini, TH3D EZBoard
-  [STM32F103](https://www.st.com/en/microcontrollers-microprocessors/stm32f103.html)|ARM® Cortex-M3|Malyan M200, GTM32 Pro, MKS Robin, BTT SKR Mini
-  [STM32F401](https://www.st.com/en/microcontrollers-microprocessors/stm32f401.html)|ARM® Cortex-M4|ARMED, Rumba32, SKR Pro, Lerdge, FYSETC S6, Artillery Ruby
-  [STM32F7x6](https://www.st.com/en/microcontrollers-microprocessors/stm32f7x6.html)|ARM® Cortex-M7|The Borg, RemRam V1
-  [STM32G0B1RET6](https://www.st.com/en/microcontrollers-microprocessors/stm32g0x1.html)|ARM® Cortex-M0+|BigTreeTech SKR mini E3 V3.0
-  [STM32H743xIT6](https://www.st.com/en/microcontrollers-microprocessors/stm32h743-753.html)|ARM® Cortex-M7|BigTreeTech SKR V3.0, SKR EZ V3.0, SKR SE BX V2.0/V3.0
-  [SAMD51P20A](https://www.adafruit.com/product/4064)|ARM® Cortex-M4|Adafruit Grand Central M4
-  [Teensy 3.5](https://www.pjrc.com/store/teensy35.html)|ARM® Cortex-M4|
-  [Teensy 3.6](https://www.pjrc.com/store/teensy36.html)|ARM® Cortex-M4|
-  [Teensy 4.0](https://www.pjrc.com/store/teensy40.html)|ARM® Cortex-M7|
-  [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)|ARM® Cortex-M7|
-  Linux Native|x86/ARM/etc.|Raspberry Pi
-
-## Submitting Patches
-
-Proposed patches should be submitted as a Pull Request against the ([bugfix-2.1.x](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.1.x)) branch.
-
-- This branch is for fixing bugs and integrating any new features for the duration of the Marlin 2.1.x life-cycle.
-- Follow the [Coding Standards](https://marlinfw.org/docs/development/coding_standards.html) to gain points with the maintainers.
-- Please submit Feature Requests and Bug Reports to the [Issue Queue](https://github.com/MarlinFirmware/Marlin/issues/new/choose). Support resources are also listed there.
-- Whenever you add new features, be sure to add tests to `buildroot/tests` and then run your tests locally, if possible.
-  - It's optional: Running all the tests on Windows might take a long time, and they will run anyway on GitHub.
-  - If you're running the tests on Linux (or on WSL with the code on a Linux volume) the speed is much faster.
-  - You can use `make tests-all-local` or `make tests-single-local TEST_TARGET=...`.
-  - If you prefer Docker you can use `make tests-all-local-docker` or `make tests-all-local-docker TEST_TARGET=...`.
+<!--[](https://raw.githubusercontent.com/mriscoc/Ender3V2S1/Ender3V2S1-Released/screenshots/main.jpg)-->
 
 ## Marlin Support
 
@@ -249,60 +217,38 @@ The Issue Queue is reserved for Bug Reports and Feature Requests. To get help wi
 - Facebook Group ["Marlin Firmware for 3D Printers"](https://www.facebook.com/groups/3Dtechtalk/)
 - [Marlin Configuration](https://www.youtube.com/results?search_query=marlin+configuration) on YouTube
 
-## Contributors
+## Credits
 
-Marlin is constantly improving thanks to a huge number of contributors from all over the world bringing their specialties and talents. Huge thanks are due to [all the contributors](https://github.com/MarlinFirmware/Marlin/graphs/contributors) who regularly patch up bugs, help direct traffic, and basically keep Marlin from falling apart. Marlin's continued existence would not be possible without them.
+Thanks to Reddit u/schuh8 for donating his board to help test the firmware. 
+and I*_U*1
 
-## Administration
 
-Regular users can open and close their own issues, but only the administrators can do project-related things like add labels, merge changes, set milestones, and kick trolls. The current Marlin admin team consists of:
 
-<table align="center">
-<tr><td>Project Maintainer</td></tr>
-<tr><td>
+Find me on [Facebook](https://www.facebook.com/yoboyyy) 
 
- 🇺🇸  **Scott Lahteine**
-       [@thinkyhead](https://github.com/thinkyhead)
-       [<kbd>  Donate 💸  </kbd>](https://www.thinkyhead.com/donate-to-marlin)
+Join the Voxelab Aquila [Facebook Group](https://www.facebook.com/groups/voxelabaquila/)
 
-</td><td>
+This fork of Mriscoc's ProUI firmware is maintained by [@classicrocker883](https://github.com/classicrocker883) (yours truly)
 
- 🇺🇸  **Roxanne Neufeld**
-       [@Roxy-3D](https://github.com/Roxy-3D)
+ProUI is a Marlin based firmware maintained by [@mriscoc](https://github.com/mriscoc)
 
- 🇺🇸  **Keith Bennett**
-       [@thisiskeithb](https://github.com/thisiskeithb)
-       [<kbd>  Donate 💸  </kbd>](https://github.com/sponsors/thisiskeithb)
+Marlin is maintained mainly by [@thinkyhead](https://github.com/thinkyhead) 
 
- 🇺🇸  **Jason Smith**
-       [@sjasonsmith](https://github.com/sjasonsmith)
+This work would not be possible without me spending time working on it for free.
 
-</td><td>
+I would greatly appreate supporters, helpers and betatesters whenever possible.
 
- 🇧🇷  **Victor Oliveira**
-       [@rhapsodyv](https://github.com/rhapsodyv)
+Please consider making a donation or show your support or input if you end up using this firmware.
 
- 🇬🇧  **Chris Pepper**
-       [@p3p](https://github.com/p3p)
+It wasn't easy getting it to this point. I am just a basic programmer and the work is mostly trial and error. Thank goodness for VS Code's compiler which shows me what changes need to be made as I make them.
 
-🇳🇿  **Peter Ellens**
-       [@ellensp](https://github.com/ellensp)
-       [<kbd>  Donate 💸  </kbd>](https://ko-fi.com/ellensp)
+Marlin firmware is an Open Source project hosted on Github, [Marlin](https://marlinfw.org/) is owned and maintained by the maker community.  
 
-</td><td>
+VS Code is an IDE program owned and maintained by Microsoft.
 
- 🇺🇸  **Bob Kuhn**
-       [@Bob-the-Kuhn](https://github.com/Bob-the-Kuhn)
+## Disclaimer  
 
- 🇳🇱  **Erik van der Zalm**
-       [@ErikZalm](https://github.com/ErikZalm)
-       [<kbd>  Donate 💸  </kbd>](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)
+THIS FIRMWARE AND ALL OTHER FILES IN THE DOWNLOAD ARE PROVIDED FREE OF CHARGE WITH NO WARRANTY OR GUARANTEE. SUPPORT IS NOT INCLUDED JUST BECAUSE YOU DOWNLOADED THE FIRMWARE. WE ARE NOT LIABLE FOR ANY DAMAGE TO YOUR PRINTER, PERSON, OR ANY OTHER PROPERTY DUE TO USE OF THIS FIRMWARE. IF YOU DO NOT AGREE TO THESE TERMS THEN DO NOT USE THE FIRMWARE.
 
-</td></tr>
-</table>
-
-## License
-
-Marlin is published under the [GPL license](/LICENSE) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
-
-While we can't prevent the use of this code in products (3D printers, CNC, etc.) that are closed source or crippled by a patent, we would prefer that you choose another firmware or, better yet, make your own.
+## LICENSE
+For the license, check the header of each file, if the license is not specified there, the project license will be used. Marlin is licensed under the GPL.
