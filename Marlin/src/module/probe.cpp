@@ -939,7 +939,7 @@ float Probe::probe_at_point(const_float_t rx, const_float_t ry, const ProbePtRai
   
   
   
-  (npos, feedRate_t(XY_PROBE_FEEDRATE_MM_S));
+ // (npos, feedRate_t(XY_PROBE_FEEDRATE_MM_S));
 
   #if ENABLED(BD_SENSOR)
     return current_position.z - bdl.read(); // Difference between Z-home-relative Z and sensor reading

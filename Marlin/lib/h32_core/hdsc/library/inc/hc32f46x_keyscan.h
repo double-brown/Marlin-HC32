@@ -57,8 +57,8 @@
 /*******************************************************************************
  * Include files
  ******************************************************************************/
-#include "hc32_common.h"
-#include "ddl_config.h"
+#include "../../common/hc32_common.h"
+#include "../../common/ddl_config.h"
 
 #if (DDL_KEYSCAN_ENABLE == DDL_ON)
 
