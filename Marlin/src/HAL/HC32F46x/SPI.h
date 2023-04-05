@@ -27,10 +27,10 @@
 #ifdef USE_SPI
 #warning "'SPI' has not been tested to work as expected. Proceed at your own risk"
 
-#include "../cores/libmaple_types.h"
+#include "../../../lib/h32_core/ibmaple_types.h"
 #include "../cores/spi.h"
 
-#include "../cores/boards.h"
+#include "../../../src/core/boards.h"
 #include <stdint.h>
 #include <wirish.h>
 

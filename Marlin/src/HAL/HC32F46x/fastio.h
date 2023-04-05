@@ -26,7 +26,7 @@
  * Fast I/O interfaces for HC32F46x
  * These use GPIO functions instead of Direct Port Manipulation, as on AVR.
  */
-#include "io.h"
+#include "../../../lib/h32_core/io.h"
 
 #define READ(IO) (PORT_GetBitGPIO(IO) ? HIGH : LOW)
 #define WRITE(IO, V) (((V) > 0) ? PORT_SetBitsGPIO(IO) : PORT_ResetBitsGPIO(IO))

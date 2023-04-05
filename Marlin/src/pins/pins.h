@@ -628,7 +628,7 @@
 #elif MB(PANDA_PI_V29)
   #include "stm32f1/pins_PANDA_PI_V29.h"        // STM32F103RCT6                          env:PANDA_PI_V29
 #elif MB(AQUILA_X2_H32)
-  #include "hc32f46x/pins_Aquila_X2.h"          // HC32F46x  
+  #include "hc32f46x/pins_Aquila_X2.h"          // HC32F46x                               env:HC32F46x_AQUILA_X2
 
 //
 // ARM Cortex-M4F

@@ -3,9 +3,9 @@
  */
 #ifdef TARGET_HC32F46x
 
-#include "HAL.h"
-#include "hc32f46x_wdt.h"
-#include "../inc/MarlinConfig.h"
+#include "../HAL.h"
+#include "../../../lib/h32_core/hdsc/library/inc/hc32f46x_wdt.h"
+#include "../../inc/MarlinConfig.h"
 #include "soctemp.h"
 
 extern "C" char *_sbrk(int incr);
