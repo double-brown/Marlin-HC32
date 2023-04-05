@@ -23,6 +23,7 @@
 
 #include "../inc/MarlinConfig.h"
 #include "serial_hook.h"
+#include "../HAL/HC32F46x/HAL.h"
 
 #if HAS_MEATPACK
   #include "../feature/meatpack.h"

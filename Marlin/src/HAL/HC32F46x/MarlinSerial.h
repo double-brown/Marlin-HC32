@@ -20,7 +20,7 @@
  *
  */
 #pragma once
-#include "HardwareSerial.h"
+#include "../../../lib/h32_core/HardwareSerial.h"
 #include "../../core/serial_hook.h"
 
 // optionally set uart IRQ priority to reduce overflow errors
