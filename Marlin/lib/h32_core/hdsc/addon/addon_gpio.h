@@ -1,7 +1,7 @@
 #pragma once
 #if (DDL_GPIO_ENABLE == DDL_ON)
 
-#include "hc32f46x_gpio.h"
+#include "../library/inc/hc32f46x_gpio.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -1,5 +1,5 @@
 #include "soctemp.h"
-#include "../ots/ots.h"
+#include "../../../lib/h32_core/drivers/ots/ots.h"
 
 #define _MK_STRING(M) #M
 #define MK_STRING(M) _MK_STRING(M)

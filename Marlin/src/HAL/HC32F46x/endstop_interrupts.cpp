@@ -1,6 +1,6 @@
 #include "endstop_interrupts.h"
-#include "../module/endstops.h"
-#include "interrupts.h"
+#include "../../module/endstops.h"
+#include "../../../lib/h32_core/interrupts.h"
 
 // Z_MIN_PROBE does not follow the same naming as all other pins...
 #if HAS_Z_MIN_PROBE_PIN && !defined(HAS_Z_MIN_PROBE)

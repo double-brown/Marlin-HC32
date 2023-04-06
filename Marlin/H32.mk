@@ -179,7 +179,6 @@ $(OUTPUT_FILE_BASE).elf: $(OBJ_FILES)
 		-Xlinker \
 		--gc-sections \
 		-Wl,-Map,$(OUTPUT_FILE_BASE).map \
-		-Wl,--no-warn-rwx-segment \
 		-Wl,--print-memory-usage \
 		--specs=nano.specs \
 		--specs=nosys.specs \

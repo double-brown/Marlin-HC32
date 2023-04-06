@@ -54,9 +54,9 @@
 /*******************************************************************************
  * Include files
  ******************************************************************************/
-#include "hc32_ddl.h"
-#include "hc32f46x_utility.h"
-#include "hc32f46x_dmac.h"
+#include "../../hdsc/common/hc32_ddl.h"
+#include "../../hdsc/library/inc/hc32f46x_utility.h"
+#include "../../hdsc/library/inc/hc32f46x_dmac.h"
 
 /* C binding of definitions if building with C++ compiler */
 #ifdef __cplusplus
